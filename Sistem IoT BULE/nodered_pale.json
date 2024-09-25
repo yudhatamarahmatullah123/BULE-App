@@ -1,0 +1,1202 @@
+[
+    {
+        "id": "564e011e075fac28",
+        "type": "tab",
+        "label": "PALE",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "3572d07acf83b089",
+        "type": "tab",
+        "label": "PALE Backup",
+        "disabled": true,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "8234be649768a71d",
+        "type": "mqtt-broker",
+        "name": "PALE Server",
+        "broker": "34.31.59.23",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "3",
+        "keepalive": "60",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "dff9603e172e1d75",
+        "type": "ui_tab",
+        "name": "ESP8266",
+        "icon": "dashboard",
+        "order": 2,
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "1e36cea02d905e42",
+        "type": "ui_tab",
+        "name": "Katup",
+        "icon": "Katup",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "bd16d2bb7a66f39a",
+        "type": "ui_group",
+        "name": "ESP8266 Thermistor NTC MQTT",
+        "tab": "dff9603e172e1d75",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c079f1c984b05fe4",
+        "type": "ui_group",
+        "name": "MQ135",
+        "tab": "dff9603e172e1d75",
+        "order": 3,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "7425084c949fae29",
+        "type": "ui_group",
+        "name": "Sensor Ph",
+        "tab": "dff9603e172e1d75",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "5d457e5c9d017707",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey",
+                "palette": "light"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "372add3cda52af51",
+        "type": "MySQLdatabase",
+        "name": "DATABASE PALE",
+        "host": "34.31.59.23",
+        "port": "3306",
+        "db": "pale_db",
+        "tz": "",
+        "charset": "UTF8"
+    },
+    {
+        "id": "071e31b8c3ba162e",
+        "type": "ui_group",
+        "name": "Katup",
+        "tab": "1e36cea02d905e42",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "c123303c31dd9f0f",
+        "type": "comment",
+        "z": "564e011e075fac28",
+        "name": "WARNING: please check you have started this container with a volume that is mounted to /data\\n otherwise any flow changes are lost when you redeploy or upgrade the container\\n (e.g. upgrade to a more recent node-red docker image).\\n  If you are using named volumes you can ignore this warning.\\n Double click or see info side panel to learn how to start Node-RED in Docker to save your work",
+        "info": "\nTo start docker with a bind mount volume (-v option), for example:\n\n```\ndocker run -it -p 1880:1880 -v /home/user/node_red_data:/data --name mynodered nodered/node-red\n```\n\nwhere `/home/user/node_red_data` is a directory on your host machine where you want to store your flows.\n\nIf you do not do this then you can experiment and redploy flows, but if you restart or upgrade the container the flows will be disconnected and lost. \n\nThey will still exist in a hidden data volume, which can be recovered using standard docker techniques, but that is much more complex than just starting with a named volume as described above.",
+        "x": 350,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "2f32658451e5e26a",
+        "type": "comment",
+        "z": "564e011e075fac28",
+        "name": "ESP8266 MQTT Temperature Thermistor NTC ",
+        "info": "",
+        "x": 190,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "596b024d4a2187bf",
+        "type": "mqtt in",
+        "z": "564e011e075fac28",
+        "name": "",
+        "topic": "sensor/NTC/tempInC",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "8234be649768a71d",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 140,
+        "y": 240,
+        "wires": [
+            [
+                "70ad455aa3131199",
+                "4475b4bb4a421d76",
+                "4a4eca621173be83"
+            ]
+        ]
+    },
+    {
+        "id": "7ee41d995ab826ad",
+        "type": "comment",
+        "z": "564e011e075fac28",
+        "name": "ESP8266 MQTT MQ135",
+        "info": "",
+        "x": 130,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "91372448333e6e0a",
+        "type": "mqtt in",
+        "z": "564e011e075fac28",
+        "name": "",
+        "topic": "sensor/MQ135/ammonia",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "8234be649768a71d",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 130,
+        "y": 360,
+        "wires": [
+            [
+                "ef9378b8d47e25a2",
+                "743f810ef6189b68",
+                "4a4eca621173be83"
+            ]
+        ]
+    },
+    {
+        "id": "481c6f74cdf6a946",
+        "type": "comment",
+        "z": "564e011e075fac28",
+        "name": "ESP8266 MQTT Ph",
+        "info": "",
+        "x": 110,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "4e4d59c98576347d",
+        "type": "mqtt in",
+        "z": "564e011e075fac28",
+        "name": "",
+        "topic": "sensor/PH/phValue",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "8234be649768a71d",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 150,
+        "y": 480,
+        "wires": [
+            [
+                "f454422b23522aef",
+                "084f54d093f14b96",
+                "4a4eca621173be83"
+            ]
+        ]
+    },
+    {
+        "id": "274cf9e79cee4818",
+        "type": "debug",
+        "z": "564e011e075fac28",
+        "name": "debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "topic",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1070,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "379237cafb075281",
+        "type": "function",
+        "z": "564e011e075fac28",
+        "name": "sending",
+        "func": "// Log the values before constructing the SQL query\nconsole.log(\"Temperature_NTC:\", msg.payload[1]);\nconsole.log(\"Ammonia_MQ135:\", msg.payload[2]);\nconsole.log(\"Ph_Sensor:\", msg.payload[0]);\n\n// Your existing code to construct the SQL query\nmsg.topic = \"INSERT INTO pale_db.pale_tables (Temperature_NTC, Ammonia_MQ135, Ph_Sensor)\" +\n            \"VALUES ('\" + msg.payload[0] + \"','\" + msg.payload[1] + \"','\" + msg.payload[2] + \"')\";\n\n// Log the constructed SQL query\nconsole.log(\"Constructed SQL query:\", msg.topic);\n\n// Send the message to the MySQL node\nreturn msg;\n\n// // Construct the SQL query\n// msg.topic = \"INSERT INTO pale_db.pale_tables (Temperature_NTC, Ammonia_MQ135, Ph_Sensor)\" +\n//             \"VALUES (\" + parseFloat(msg.payload[0]) + \",\" + parseFloat(msg.payload[1]) + \",\" + parseFloat(msg.payload[2]) +\")\";\n\n// // Log the constructed SQL query\n// console.log(\"Constructed SQL query:\", msg.topic);\n\n// return msg;\n\n// // Convert string values with comma to float\n// const temperatureNTC = parseFloat(msg.payload[0].replace(',', '.'));\n// const ammoniaMQ135 = parseFloat(msg.payload[1].replace(',', '.'));\n// const phSensor = parseFloat(msg.payload[2].replace(',', '.'));\n\n// // Construct the SQL query\n// msg.topic = \"INSERT INTO pale_db.pale_tables (Temperature_NTC, Ammonia_MQ135, Ph_Sensor)\" +\n//             \"VALUES (\" + temperatureNTC + \",\" + ammoniaMQ135 + \",\" + phSensor +\")\";\n\n// // Log the constructed SQL query\n// console.log(\"Constructed SQL query:\", msg.topic);\n\n// return msg;\n\n// // Convert string values with comma to float\n// const temperatureNTC = parseFloat(msg.payload[0].replace(',', '.'));\n// const ammoniaMQ135 = parseFloat(msg.payload[1].replace(',', '.'));\n// const phSensor = parseFloat(msg.payload[2].replace(',', '.'));\n\n// // Construct the SQL query\n// msg.topic = \"INSERT INTO pale_db.pale_tables (Temperature_NTC, Ammonia_MQ135, Ph_Sensor)\" +\n//             \"VALUES (\" + temperatureNTC + \",\" + ammoniaMQ135 + \",\" + phSensor +\")\";\n\n// // Log the constructed SQL query\n// console.log(\"Constructed SQL query:\", msg.topic);\n\n// return msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 360,
+        "wires": [
+            [
+                "7b7b89dbc3d77531"
+            ]
+        ]
+    },
+    {
+        "id": "4a4eca621173be83",
+        "type": "join",
+        "z": "564e011e075fac28",
+        "name": "",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "3",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 550,
+        "y": 360,
+        "wires": [
+            [
+                "379237cafb075281"
+            ]
+        ]
+    },
+    {
+        "id": "e83df2ddadea771c",
+        "type": "comment",
+        "z": "564e011e075fac28",
+        "name": "ESP8266 MQTT Alert & Relay for Katup",
+        "info": "",
+        "x": 170,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "eb7ce95e50a684fa",
+        "type": "mqtt out",
+        "z": "564e011e075fac28",
+        "name": "",
+        "topic": "katup",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "8234be649768a71d",
+        "x": 350,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "cf3a5954b7521194",
+        "type": "debug",
+        "z": "564e011e075fac28",
+        "name": "debug",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 350,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "e36c8b21a6108e93",
+        "type": "ui_switch",
+        "z": "564e011e075fac28",
+        "name": "Katup",
+        "label": "Switch Katup",
+        "tooltip": "",
+        "group": "071e31b8c3ba162e",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "katup",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 190,
+        "y": 640,
+        "wires": [
+            [
+                "eb7ce95e50a684fa",
+                "cf3a5954b7521194"
+            ]
+        ]
+    },
+    {
+        "id": "70ad455aa3131199",
+        "type": "ui_gauge",
+        "z": "564e011e075fac28",
+        "name": "",
+        "group": "bd16d2bb7a66f39a",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperature In C",
+        "label": "ºC",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 390,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "ef9378b8d47e25a2",
+        "type": "ui_gauge",
+        "z": "564e011e075fac28",
+        "name": "",
+        "group": "c079f1c984b05fe4",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Ammonia",
+        "label": "mg/L",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "2",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 360,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "f454422b23522aef",
+        "type": "ui_gauge",
+        "z": "564e011e075fac28",
+        "name": "",
+        "group": "7425084c949fae29",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Sensor Ph",
+        "label": "pH",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "15",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 370,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "4475b4bb4a421d76",
+        "type": "ui_chart",
+        "z": "564e011e075fac28",
+        "name": "",
+        "group": "bd16d2bb7a66f39a",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "Water Temp",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "50",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": "",
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 370,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "743f810ef6189b68",
+        "type": "ui_chart",
+        "z": "564e011e075fac28",
+        "name": "",
+        "group": "c079f1c984b05fe4",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "label": "Ammonia",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "2",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 360,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "084f54d093f14b96",
+        "type": "ui_chart",
+        "z": "564e011e075fac28",
+        "name": "",
+        "group": "7425084c949fae29",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "label": "Sensor Ph",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "15",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 370,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "904a1b1b8cc360db",
+        "type": "link in",
+        "z": "564e011e075fac28",
+        "name": "link in 1",
+        "links": [],
+        "x": 95,
+        "y": 640,
+        "wires": [
+            [
+                "e36c8b21a6108e93"
+            ]
+        ]
+    },
+    {
+        "id": "7b7b89dbc3d77531",
+        "type": "mysql",
+        "z": "564e011e075fac28",
+        "mydb": "372add3cda52af51",
+        "name": "",
+        "x": 890,
+        "y": 360,
+        "wires": [
+            [
+                "274cf9e79cee4818"
+            ]
+        ]
+    },
+    {
+        "id": "98c7873797d820ac",
+        "type": "comment",
+        "z": "3572d07acf83b089",
+        "name": "WARNING: please check you have started this container with a volume that is mounted to /data\\n otherwise any flow changes are lost when you redeploy or upgrade the container\\n (e.g. upgrade to a more recent node-red docker image).\\n  If you are using named volumes you can ignore this warning.\\n Double click or see info side panel to learn how to start Node-RED in Docker to save your work",
+        "info": "\nTo start docker with a bind mount volume (-v option), for example:\n\n```\ndocker run -it -p 1880:1880 -v /home/user/node_red_data:/data --name mynodered nodered/node-red\n```\n\nwhere `/home/user/node_red_data` is a directory on your host machine where you want to store your flows.\n\nIf you do not do this then you can experiment and redploy flows, but if you restart or upgrade the container the flows will be disconnected and lost. \n\nThey will still exist in a hidden data volume, which can be recovered using standard docker techniques, but that is much more complex than just starting with a named volume as described above.",
+        "x": 350,
+        "y": 80,
+        "wires": []
+    },
+    {
+        "id": "6e8fa6f8869fc3b7",
+        "type": "comment",
+        "z": "3572d07acf83b089",
+        "name": "ESP8266 MQTT Temperature Thermistor NTC ",
+        "info": "",
+        "x": 190,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "41674a0a26b1ac4d",
+        "type": "mqtt in",
+        "z": "3572d07acf83b089",
+        "name": "",
+        "topic": "sensor/NTC/tempInC",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "8234be649768a71d",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 140,
+        "y": 240,
+        "wires": [
+            [
+                "a7f6517c393283b2",
+                "6b57b684ca2c8103",
+                "e5bc7c52c347ab10"
+            ]
+        ]
+    },
+    {
+        "id": "0d2b82f6dd1ad8d8",
+        "type": "comment",
+        "z": "3572d07acf83b089",
+        "name": "ESP8266 MQTT MQ135",
+        "info": "",
+        "x": 130,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "1c8bd2864d2470b2",
+        "type": "mqtt in",
+        "z": "3572d07acf83b089",
+        "name": "",
+        "topic": "sensor/MQ135/ammonia",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "8234be649768a71d",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 130,
+        "y": 360,
+        "wires": [
+            [
+                "8a8ab33f49d5a26e",
+                "cb07d95838933727",
+                "e5bc7c52c347ab10"
+            ]
+        ]
+    },
+    {
+        "id": "6c0b567b3c1cb8ea",
+        "type": "comment",
+        "z": "3572d07acf83b089",
+        "name": "ESP8266 MQTT Ph",
+        "info": "",
+        "x": 110,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "df731195c77c1b0c",
+        "type": "mqtt in",
+        "z": "3572d07acf83b089",
+        "name": "",
+        "topic": "sensor/PH/phValue",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "8234be649768a71d",
+        "nl": false,
+        "rap": false,
+        "inputs": 0,
+        "x": 150,
+        "y": 480,
+        "wires": [
+            [
+                "9135cb13f14ad8a8",
+                "a2b9cd59b12e2f9f",
+                "e5bc7c52c347ab10"
+            ]
+        ]
+    },
+    {
+        "id": "5ba9a02db5507b84",
+        "type": "debug",
+        "z": "3572d07acf83b089",
+        "name": "debug 6",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "topic",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1080,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "36c31756d3a4d053",
+        "type": "function",
+        "z": "3572d07acf83b089",
+        "name": "sending",
+        "func": "// Log the values before constructing the SQL query\nconsole.log(\"Temperature_NTC:\", msg.payload[0]);\nconsole.log(\"Ammonia_MQ135:\", msg.payload[1]);\nconsole.log(\"Ph_Sensor:\", msg.payload[2]);\n\n// Your existing code to construct the SQL query\nmsg.topic = \"INSERT INTO pale_db.pale_tables (Temperature_NTC, Ammonia_MQ135, Ph_Sensor)\" +\n            \"VALUES ('\" + msg.payload[0] + \"','\" + msg.payload[1] + \"','\" + msg.payload[2] + \"')\";\n\n// Log the constructed SQL query\nconsole.log(\"Constructed SQL query:\", msg.topic);\n\n// Send the message to the MySQL node\nreturn msg;\n\n// // Construct the SQL query\n// msg.topic = \"INSERT INTO pale_db.pale_tables (Temperature_NTC, Ammonia_MQ135, Ph_Sensor)\" +\n//             \"VALUES (\" + parseFloat(msg.payload[0]) + \",\" + parseFloat(msg.payload[1]) + \",\" + parseFloat(msg.payload[2]) +\")\";\n\n// // Log the constructed SQL query\n// console.log(\"Constructed SQL query:\", msg.topic);\n\n// return msg;\n\n// // Convert string values with comma to float\n// const temperatureNTC = parseFloat(msg.payload[0].replace(',', '.'));\n// const ammoniaMQ135 = parseFloat(msg.payload[1].replace(',', '.'));\n// const phSensor = parseFloat(msg.payload[2].replace(',', '.'));\n\n// // Construct the SQL query\n// msg.topic = \"INSERT INTO pale_db.pale_tables (Temperature_NTC, Ammonia_MQ135, Ph_Sensor)\" +\n//             \"VALUES (\" + temperatureNTC + \",\" + ammoniaMQ135 + \",\" + phSensor +\")\";\n\n// // Log the constructed SQL query\n// console.log(\"Constructed SQL query:\", msg.topic);\n\n// return msg;\n\n// // Convert string values with comma to float\n// const temperatureNTC = parseFloat(msg.payload[0].replace(',', '.'));\n// const ammoniaMQ135 = parseFloat(msg.payload[1].replace(',', '.'));\n// const phSensor = parseFloat(msg.payload[2].replace(',', '.'));\n\n// // Construct the SQL query\n// msg.topic = \"INSERT INTO pale_db.pale_tables (Temperature_NTC, Ammonia_MQ135, Ph_Sensor)\" +\n//             \"VALUES (\" + temperatureNTC + \",\" + ammoniaMQ135 + \",\" + phSensor +\")\";\n\n// // Log the constructed SQL query\n// console.log(\"Constructed SQL query:\", msg.topic);\n\n// return msg;\n",
+        "outputs": 1,
+        "timeout": 0,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 700,
+        "y": 360,
+        "wires": [
+            [
+                "879de74e815113fb"
+            ]
+        ]
+    },
+    {
+        "id": "e5bc7c52c347ab10",
+        "type": "join",
+        "z": "3572d07acf83b089",
+        "name": "",
+        "mode": "custom",
+        "build": "array",
+        "property": "payload",
+        "propertyType": "msg",
+        "key": "topic",
+        "joiner": "\\n",
+        "joinerType": "str",
+        "accumulate": false,
+        "timeout": "",
+        "count": "3",
+        "reduceRight": false,
+        "reduceExp": "",
+        "reduceInit": "",
+        "reduceInitType": "num",
+        "reduceFixup": "",
+        "x": 550,
+        "y": 360,
+        "wires": [
+            [
+                "36c31756d3a4d053"
+            ]
+        ]
+    },
+    {
+        "id": "5102ce7d4df28caf",
+        "type": "comment",
+        "z": "3572d07acf83b089",
+        "name": "ESP8266 MQTT Alert & Relay for Katup",
+        "info": "",
+        "x": 170,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "3c59cd5639a5a2e4",
+        "type": "mqtt out",
+        "z": "3572d07acf83b089",
+        "name": "",
+        "topic": "katup",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "8234be649768a71d",
+        "x": 350,
+        "y": 600,
+        "wires": []
+    },
+    {
+        "id": "9b71f449cc485fd1",
+        "type": "debug",
+        "z": "3572d07acf83b089",
+        "name": "debug 7",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 360,
+        "y": 680,
+        "wires": []
+    },
+    {
+        "id": "841f109f37dd53f6",
+        "type": "ui_switch",
+        "z": "3572d07acf83b089",
+        "name": "Katup",
+        "label": "Switch Katup",
+        "tooltip": "",
+        "group": "071e31b8c3ba162e",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "katup",
+        "topicType": "str",
+        "style": "",
+        "onvalue": "on",
+        "onvalueType": "str",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "off",
+        "offvalueType": "str",
+        "officon": "",
+        "offcolor": "",
+        "animate": false,
+        "className": "",
+        "x": 190,
+        "y": 640,
+        "wires": [
+            [
+                "3c59cd5639a5a2e4",
+                "9b71f449cc485fd1"
+            ]
+        ]
+    },
+    {
+        "id": "a7f6517c393283b2",
+        "type": "ui_gauge",
+        "z": "3572d07acf83b089",
+        "name": "",
+        "group": "bd16d2bb7a66f39a",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Temperature In C",
+        "label": "ºC",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "100",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 390,
+        "y": 220,
+        "wires": []
+    },
+    {
+        "id": "8a8ab33f49d5a26e",
+        "type": "ui_gauge",
+        "z": "3572d07acf83b089",
+        "name": "",
+        "group": "c079f1c984b05fe4",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Ammonia",
+        "label": "mg/L",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "5",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 360,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "9135cb13f14ad8a8",
+        "type": "ui_gauge",
+        "z": "3572d07acf83b089",
+        "name": "",
+        "group": "7425084c949fae29",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "Sensor Ph",
+        "label": "pH",
+        "format": "{{value}}",
+        "min": "0",
+        "max": "50",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "",
+        "seg2": "",
+        "diff": false,
+        "className": "",
+        "x": 370,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "6b57b684ca2c8103",
+        "type": "ui_chart",
+        "z": "3572d07acf83b089",
+        "name": "",
+        "group": "bd16d2bb7a66f39a",
+        "order": 3,
+        "width": 0,
+        "height": 0,
+        "label": "Water Temp",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "50",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": "",
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 370,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "cb07d95838933727",
+        "type": "ui_chart",
+        "z": "3572d07acf83b089",
+        "name": "",
+        "group": "c079f1c984b05fe4",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "label": "Ammonia",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "5",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 360,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a2b9cd59b12e2f9f",
+        "type": "ui_chart",
+        "z": "3572d07acf83b089",
+        "name": "",
+        "group": "7425084c949fae29",
+        "order": 4,
+        "width": 0,
+        "height": 0,
+        "label": "Sensor Ph",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "0",
+        "ymax": "50",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 370,
+        "y": 500,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4aefff98f5f43b5b",
+        "type": "link in",
+        "z": "3572d07acf83b089",
+        "name": "link in 2",
+        "links": [],
+        "x": 185,
+        "y": 640,
+        "wires": [
+            [
+                "841f109f37dd53f6"
+            ]
+        ]
+    },
+    {
+        "id": "879de74e815113fb",
+        "type": "mysql",
+        "z": "3572d07acf83b089",
+        "mydb": "372add3cda52af51",
+        "name": "",
+        "x": 890,
+        "y": 360,
+        "wires": [
+            [
+                "5ba9a02db5507b84"
+            ]
+        ]
+    }
+]
